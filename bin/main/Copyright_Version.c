@@ -17,8 +17,8 @@ int Copyright_Version(void) {
 	printf("\t║2.所有软件资源如无特殊说明，均为永久免费可用版。        ║\n");	system("sleep 0.5");
 	printf("\t║3.任何人不得利用本软件系统作为商业用途或其他违法行为。  ║\n");	system("sleep 0.5");
 	printf("\t║4.感谢您光顾本工作室，我们将竭诚为你提供最优秀的黑软。  ║\n");	system("sleep 0.5");
-	printf("\t║5.本软件作者：张懿                                      ║\n");	system("sleep 0.5");
-	printf("\t║6.本软件版本：V1.0                                      ║\n");	system("sleep 0.5");
+	printf("\t║5.本软件作者：Geek、张懿                                ║\n");	system("sleep 0.5");
+	printf("\t║6.本软件版本：V2.0                                      ║\n");	system("sleep 0.5");
 	printf("\t║7.联系作者：zy251021@163.com                            ║\n");	system("sleep 0.5");
 	printf("\t║          ╭──────────────────────────────────╮          ║\n");	system("sleep 0.5");
 	printf("\t╰══════════┤★★★  中国最具潜力的黑软集散地！★★★├══════════╯\n");	system("sleep 0.5");	

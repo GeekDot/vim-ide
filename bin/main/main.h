@@ -2,10 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include<sys/types.h>
+#include<sys/wait.h>
+#include<fcntl.h>
+#include<limits.h>
+
+#define BUFSZ 150
 
 char input;
 
-int main(void);					//主函数，程序入口
+int main(int argc, char *argv[]);	//主函数，程序入口
+void err_quit(char *msg);
 int Start_Install(void);		//开始执行程序
 int Function_List(void);		//功能列表
 int Copyright_Version(void);

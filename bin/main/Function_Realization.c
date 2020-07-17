@@ -10,12 +10,6 @@ int System_Configure(void) {
 	system("apt-get install gcc -y");
 	system("apt-get install ncurses-dev -y");		//Cscope的依赖包
 	
-	system("dir=`pwd`; cp /etc/vim/vimrc $dir/etc/");
-	system("sudo sed -i -e '/(0000,0003)/,/(0000,0014)+2/ d' /etc/vim/vimrc");
-	system("dir=`pwd`; rm -r $dir/usr/*");
-	system("rm -r /etc/vim/doc/ /etc/vim/plugin/");
-	system("mkdir /etc/vim/doc /etc/vim/plugin");
-	
 	return EXIT_SUCCESS;
 }
 
@@ -94,7 +88,7 @@ int Cscope(void) {
 //QuickFix窗口	==>		这个窗口中列出了查询命令的查询结果
 int Quick_Fix(void) {
 
-	printf(":cw		调出QuickFix窗口\n:cn		切换到下一个结果\n:cp		切换到上一个结果\nnmap <F6> :cn<cr>\nnmap <F7> :cp<cr>\n");
+	system("dir=`pwd`; cat $dir/etc/Quick_Fix.Geek >> /etc/vim/vimrc");
 
 	return EXIT_SUCCESS;
 }
@@ -171,5 +165,4 @@ int Code_Folding(void) {
 
 	return EXIT_SUCCESS;
 }
-
 
